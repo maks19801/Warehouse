@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Warehouse.Entities
+{
+    public abstract class BaseEntity
+    {
+        public int Id { get; set; }
+
+        
+        public override abstract string  ToString();
+    }
+}
