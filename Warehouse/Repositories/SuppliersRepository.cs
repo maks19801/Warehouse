@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Warehouse.Entities;
+﻿using Warehouse.Entities;
 
 namespace Warehouse.Repositories
 {

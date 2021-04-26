@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Warehouse.Entities
+﻿namespace Warehouse.Entities
 {
     public class GoodsQuantityByType:BaseEntity
     {

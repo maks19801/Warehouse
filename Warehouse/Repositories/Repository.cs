@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data.Common;
 using System.Linq;
-using System.Text;
 using Warehouse.Entities;
 
 namespace Warehouse.Repositories
@@ -94,37 +93,7 @@ namespace Warehouse.Repositories
                 return results;
             }
         }
-        /*public void GetAll()
-        {
-            var results = new List<T>();
-
-            var commandText = $"SELECT * FROM {TableName}";
-            var command = GetCommand(commandText);
-            int line = 0;
-            var reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                if (line == 0) //формируем шапку таблицы перед выводом первой строки
-                {
-                    //цикл по числу прочитанных полей
-                    for (int i = 0; i < reader.FieldCount; i++)
-                    {
-                        //вывести в консольное окно
-                        //имена полей
-                        Console.Write(reader.GetName(i) + "\t    ");
-                    }
-                    Console.WriteLine();
-                }
-                line++;
-                for (int i = 0; i < reader.FieldCount; i++)
-                {          
-                    Console.Write(reader[i] + "\t    ");
-                }
-                Console.WriteLine();
-            }
-        }*/
-        
-
+       
         public void Update(T entity)
         {
             var properties = typeof(T)
